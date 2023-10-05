@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'bookingd',
     'main',
     'accounts',
-    'storage',
+    'storages',
     
 
 ]
