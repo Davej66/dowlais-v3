@@ -159,5 +159,5 @@ LOGOUT_REDIRECT_URL = "home"
 
 LOGIN_URL = '/registration/login/'
 
-USE_S3 = os.getenv('USE_S3') == 'TRUE'
+
 
