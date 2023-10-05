@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$=yk%)l2)k=@b*c^4v0w(1_jw3&k#3e)8b(3m9p+&tr5o#-3tz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-davej66-dowlaisv3-eidqgx261uj.ws-eu105.gitpod.io','https://dowlais-pharmacy-80d10d3c17cb.herokuapp.com']
+ALLOWED_HOSTS = ['8000-davej66-dowlaisv3-eidqgx261uj.ws-eu105.gitpod.io','dowlais-pharmacy-80d10d3c17cb.herokuapp.com']
 
 
 # Application definition
