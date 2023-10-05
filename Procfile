@@ -1,1 +1,1 @@
-web: gunicorn moving_forward.wsgi:application
+web: gunicorn dowlais_pharmacy.wsgi:application
