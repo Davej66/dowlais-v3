@@ -1,0 +1,585 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-30">
+        <div class="row h-30">
+
+            <div class="col-8 col-md-8 my-auto mx-auto" style="width:850px">
+                <br><br><br><br>
+                <div>
+                    <h4 class="text-white  align-text-top text-center" >  WE ARE DOWLAIS PHARMACY LTD
+                    </h4>
+                </div>
+                <div id="mum" >
+                    <img src="{% static 'media/pharmacistblank.png'%}" class="feature-img">
+                    <!--<h5 class="text-white  align-text-top " >  When it comes to your health and medications, our Pharmacies have got you covered. Our responsible staff work hard to make sure
+                         each patient is taken care of with fast and friendly service and reliable healthcare advice. Come to our pharmacies listed below and start getting the personalised attention you deserve.
+                    </h5>-->
+                </div>
+                <br>
+                <div class="text-center" >
+                    <h4>
+                        <a href="{% url 'about' %}?category=donation" class="shop-now-button btn btn-lg rounded-0 btn-rounded text-uppercase py-3 bg-pblue ">FIND OUT MORE !</a>
+                    </h4>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+        <!-- MAIN CONTENT 
+        
+        <div class="col-sm-12 bg-white">
+            <div>
+              <div class="clearfix"></div><div class="col-md-12 image-col"><h4>We are a part of an independent pharmacy group based in the South Wales Valleys and have been serving the community for 20 years. Georgetown Pharmacy was established in 2002 in Dowlais, Merthyr Tydfil. This is a pharmacy that takes extra pride in serving the community.</h4>
+    <p>As a middleman between your doctor’s prescriptions and your own well being, we strive to provide personalized and professional attention, as well as medication management protocols that inspire customers to seek out the medications and advice they need in order to get better. Trust our Pharmacy to provide you with the care you deserve in Merthyr Tydfil.</p>
+    <p><img loading="lazy" class="alignnone wp-image-284 size-large center" src='/static/media/pharmacy.jpeg' alt="staff" max-width="660px"></p>
+    </div>
+    <div class="d-xs-block"></div></div><div class="col-md-12 image-col "><h3>Independent and passionate</h3>
+    <p>We care about the well-being of each customer who walks through our doors. That’s why we’ve dedicated so much time to ensuring we stock the widest range of medical products, offer the highest quality health services, and retain the best staff possible.</p>
+    <p>Their responsible staff works hard to ensure patient care comes first, with their professional and friendly service, and reliable healthcare advice.</p>
+    </div>        </div>
+          </div>-->
+                  
+<!-- MAIN CONTENT -->
+
+
+<main>
+    <div class="container-fluid bg-white text-dark mt-0 pt-5 test">
+      <div class="row body">
+        
+                <div class="col-sm-4 hidden-xs bg-new body"> 
+          
+                </div>
+
+        </div>
+
+
+    <!--<main>
+        <div class="container-fluid bg-white text-dark mt-0 pt-5 test">
+          <div class="row body">
+            
+                    <div class="col-sm-4 hidden-xs bg-white body">--->
+              
+            <!-- SIDEBAR -->
+
+            <div class="wrapper">
+                <div class="side_bar">
+                    <div class="side_bar_top">
+                        <div class="profile_pic">
+                            <!--<img src="profile.png" alt="profile">-->
+                        </div>
+                        <div class="profile_info">
+                            <h3>Merthyr Tydfil</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="side_bar_bottom">
+                        <ul>
+                            <li class="active">
+                                <span class="top_curve"></span>
+                                <a href="{% url 'beacons' %}" aria-current="page">
+                                   <span class="item">Beacons</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>
+                            <li>
+                                <span class="top_curve"></span>
+                                <a href="{% url 'dowlais' %}" aria-current="page">
+                                    <span class="item">Dowlais</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>
+                            <li>
+                                <span class="top_curve"></span>
+                                <a href="{% url 'georgetown' %}" aria-current="page">
+                                    <span class="item">Georgetown</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>
+                            <li>
+                                <span class="top_curve"></span>
+                                <a href="{% url 'keir' %}" aria-current="page">
+                                    <span class="item">Keir Hardie</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>
+                            <div class="profile_info text-white">
+                                <h3>Bargoed</h3>
+                            </div>
+                            <li>
+                                <span class="top_curve"></span>
+                                <a href="{% url 'lewis' %}" aria-current="page">
+                                    <span class="item">Lewis</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>
+                            <!--<li>
+                                <span class="top_curve"></span>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-cog"></i></span>
+                                    <span class="item">SETTINGS</span></a>
+                                <span class="bottom_curve"></span>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_container " style="margin-left: 50px; margin-top: 50px; ">
+                    <p> When it comes to your health and medications, our Pharmacies have got you covered. 
+                        Our responsible staff work hard to make sure
+                        each patient is taken care of with fast and friendly service and reliable healthcare
+                         advice. Come to our pharmacies listed and start getting the personalised
+                          attention you deserve.</p>
+
+                    <p>We've now have pharmacists who can prescribe medications for a range of ailiments.  
+                        Please make an appointment with the menu above.</p>
+
+                    <p>As autumn approaches we have the flu vaccine available , appointments can be made 
+                        with the menu above select the pharmacy nearest you.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <br><br><br>
+            
+
+
+
+            <!-- <div class="side-bar bg-pblue my-5">
+                <h3><strong>Our Stores</strong></h3>
+                <ul>
+                    <h4>In Merthyr Tydfil</h4> 
+                    <li><a href="{% url 'beacons' %}" aria-current="page">Beacons</a></li>
+                    <li><a href="{% url 'dowlais' %}" aria-current="page">Dowlais</a></li>
+                    <li><a href="{% url 'georgetown' %}" aria-current="page">Georgetown</a></li>
+                    <li><a href="{% url 'keir' %}" aria-current="page">Keir Hardie</a></li>
+                    <h4>In Bargoed</h4>   
+                    <li><a href="{% url 'lewis' %}" aria-current="page">Lewis</a></li>
+                </ul>
+            </div>
+  </div> 
+                  
+            <!-- MAIN CONTENT -->
+        
+           <!-- <div class="col-sm-8 bg-white">
+              <div>
+                
+                <h4>Exciting new services available in our Pharmacies</h4>
+    <p>If you are a women aged between 18 and 64 and are suffering from a urinary tract infection (UTI) Patients can speak to a specially trained pharmacist in confidence in a private consultation room.<span style="background:white"></span></p>
+    
+    <p><span style="background:white"></span>If the pharmacist concludes an infection is present, the patient may be issued with antibiotics without the need for an appointment with their GP.   </p>
+    
+    <p><span style="background:white">From April a specially trained pharacist will be avialable for advice and when rewuired prescribing for ear, throst and mouth conditions.</span></p>
+
+    <p><span style="background:white">The Common Ailments Scheme has been introduced to allow us to provide advice and treatment, the ailments covered is listed below.</span></p>
+      
+    <p><span style="background:white"></span>If the pharmacist concludes an infection is present, the patient may be issued with antibiotics without the need for an appointment with their GP.   </p>
+    
+    <p><span style="background:white">From April a specially trained pharacist will be avialable for advice and when required prescribing for ear, throst and mouth conditions.</span></p>
+
+    <p><span style="background:white">The Common Ailments Scheme has been introduced to allow us to provide advice and treatment, the ailments covered is listed below.</span></p>
+      
+
+      </div>
+      
+          
+      </div>
+
+
+
+
+
+
+
+
+
+          <div class="template py-3 bg-white">
+            <div class="container top">
+                <div class="mura-region"><div class="mura-region-local"></div></div>
+            </div>
+    
+            <div class="container">
+                
+    
+    
+    
+    
+                <div class="row">
+                    <section id="mainPageContent" class="content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        
+                        
+            
+            
+            
+                
+    
+                    
+                    
+                    
+                        
+                        
+                        
+   
+
+    <p class="alert alert-info"><strong>The 27 Common Ailments covered are -&nbsp;</strong>Acne, athlete’s foot, back pain, chickenpox, cold sores, colic, conjunctivitis, constipation, diarrhoea, dry eyes, dermatitis, haemorrhoids, hay fever, head lice, indigestion, in-growing toenails, intertrigo, ringworm, mouth ulcers, nappy rash, oral thrush, scabies, sore throat, teething, threadworms, vaginal thrush, and verrucae.</p>
+    <h5>&nbsp;</h5></div>
+                    </div>
+        </div>
+    
+    
+    
+                    
+                    
+                
+            
+        
+                        <div class="mura-region"><div class="mura-region-local"></div></div>
+                    </section>
+                </div>
+            </div>
+            <!-- /.container -->
+    
+             <!-- <div class="container bottom">
+                <div class="row">
+                    <div class="container py-3">
+                        <div class="mura-region"><div class="mura-region-inherited"><div class="mura-object mura-six mura-sm mura-object-label-top mura-async-object" data-object="collection" data-objectid="0D3BFAA6-5C82-4E27-A6A0B61062303A3B" data-instanceid="E2822731-42BE-4F90-BC457452C19C555B" data-objecticonclass="mi-th-list" data-cssstyles="{}" data-render="server" data-contentcssstyles="{}" data-metacssstyles="{&quot;textAlign&quot;:&quot;left&quot;}" data-class="mura-six mura-sm mura-object-label-top" data-sourcetype="localindex" data-source="4F2342E9-BA41-4D33-865B42B45980F645" data-nextn="20" data-modalimages="false" data-maxitems="4" data-layoutid="0D3BFAA6-5C82-4E27-A6A0B61062303A3B" data-layout="socialbar" data-imagewidth="AUTO" data-imagesize="small" data-imageheight="AUTO" data-displaylist="Image,Date,Title,Summary,Credits,Tags" data-textcolour="#FFFFFF" data-backgroundcolour="#2C3E75" data-usecategoryintersect="false" data-iconshape="square" data-iconsize="1g" data-chklinkoptions="facebook,twitter,linkedin,mailto,print" data-showonhomepage="1" data-socialbarlabel="Share:" data-objectname="Collection" data-scrollpages="false" data-applypermfilter="false" data-queue="true" data-stylesupport="{}" data-async="false" data-items="" data-nextnid="4F2342E9-BA41-4D33-865B42B45980F645" data-viewalllink="" data-viewalllabel=""><div class="mura-object-content"><style>
+        div[data-object="collection"] .mura-object-meta{
+            text-transform: none !important;
+        } -->
+    
+        
+    </style>
+    
+    
+    
+    <!--
+            
+        
+        
+        
+        
+            
+                <style>
+            #myshareBarxE2822731 .socialBar-barxE2822731 a, #mysocialBarxE2822731 .socialBar-barxE2822731 a {
+                float: left;
+                text-align: center;
+                padding: 8px 4px;
+            }
+    
+            #socialBarLabelDivxE2822731 .socialBarTitleLabel_socialxE2822731 {
+                color:#FFFFFF !important;
+                float:left;
+                margin-top:9px;
+                margin-right:2px;
+            }
+    
+            #myshareBarxE2822731 .socialBar-barxE2822731, #mysocialBarxE2822731 .socialBar-barxE2822731 {
+                background-color: #2C3E75;
+                overflow: auto;
+                z-index: 998;
+            }
+        </style>
+    
+        
+        
+    
+        
+    
+        
+            <div id="myshareBarxE2822731" class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 socialBar-barxE2822731" id="shareBarxE2822731">
+                    <div id="socialBarLabelDivxE2822731">
+                        <span class="socialBarTitleLabel_socialxE2822731">
+                            Share:
+                        </span>
+                    </div>
+    
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsbuhb%2Enhs%2Ewales%2Fnews%2Fswansea%2Dbay%2Dhealth%2Dnews%2Fcommon%2Dailments%2Dscheme%2Doffers%2Dfree%2Dover%2Dthe%2Dcounter%2Dmedicines1" target="_blank" title="Share 'Common Ailments scheme offers free over-the counter medicines' via Facebook" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Share 'Common Ailments scheme offers free over-the counter medicines' via Facebook">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-facebook"></i>
+                                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fsbuhb%2Enhs%2Ewales%2Fnews%2Fswansea%2Dbay%2Dhealth%2Dnews%2Fcommon%2Dailments%2Dscheme%2Doffers%2Dfree%2Dover%2Dthe%2Dcounter%2Dmedicines1&amp;url=https%3A%2F%2Fsbuhb%2Enhs%2Ewales%2Fnews%2Fswansea%2Dbay%2Dhealth%2Dnews%2Fcommon%2Dailments%2Dscheme%2Doffers%2Dfree%2Dover%2Dthe%2Dcounter%2Dmedicines1&amp;text=" target="_blank" title="Share 'Common Ailments scheme offers free over-the counter medicines' via Twitter" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Share 'Common Ailments scheme offers free over-the counter medicines' via Twitter">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-twitter"></i>
+                                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fsbuhb%2Enhs%2Ewales%2Fnews%2Fswansea%2Dbay%2Dhealth%2Dnews%2Fcommon%2Dailments%2Dscheme%2Doffers%2Dfree%2Dover%2Dthe%2Dcounter%2Dmedicines1" target="_blank" title="Share 'Common Ailments scheme offers free over-the counter medicines' via Linkedin" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Share 'Common Ailments scheme offers free over-the counter medicines' via Linkedin">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-linkedin"></i>
+                                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+    
+                    
+                        <a href="mailto:?subject=I%20shared%20%27Swansea%20Bay%20University%20Health%20Board%3ACommon%20Ailments%20scheme%20offers%20free%20over%2Dthe%20counter%20medicines%27%20with%20you&amp;body=Hi%2C%20I%20think%20%27Common%20Ailments%20scheme%20offers%20free%20over%2Dthe%20counter%20medicines%27%20would%20be%20of%20interest%20to%20you%21%20%20%20sbuhb%2Enhs%2Ewales%2Fnews%2Fswansea%2Dbay%2Dhealth%2Dnews%2Fcommon%2Dailments%2Dscheme%2Doffers%2Dfree%2Dover%2Dthe%2Dcounter%2Dmedicines1%2F" title="Email 'Common Ailments scheme offers free over-the counter medicines' to a friend" aria-label="Email 'Common Ailments scheme offers free over-the counter medicines' to a friend">
+                            <span class="fa-stack fa-1g">
+                                <i class="fas fa-square fa-stack-2x iconColour-envelope" aria-hidden="true"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse " aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    
+    
+                    
+                        <a href="#" onclick="window.print();" title="Print 'Common Ailments scheme offers free over-the counter medicines'" aria-label="Print">
+                            <span class="fa-stack fa-1g">
+                                <i class="fas fa-square fa-stack-2x iconColour-print" aria-hidden="true"></i>
+                                <i class="fa fa-print fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    
+    
+                    
+                </div>
+            </div></div></div><div class="mura-object mura-six mura-sm mura-object-label-top mura-async-object" data-object="collection" data-objectid="1293435C-10C0-460E-910E6FFE579FB0B6" data-instanceid="16DE6F1B-1E07-4CD6-B22648E9FA638216" data-objecticonclass="mi-th-list" data-cssstyles="{}" data-render="server" data-contentcssstyles="{}" data-metacssstyles="{&quot;textAlign&quot;:&quot;left&quot;}" data-class="mura-six mura-sm mura-object-label-top" data-sourcetype="localindex" data-source="490A4D62-5F9A-4210-98C5A6D0A065C8F5" data-nextn="20" data-modalimages="false" data-maxitems="4" data-layoutid="1293435C-10C0-460E-910E6FFE579FB0B6" data-layout="socialbar" data-imagewidth="AUTO" data-imagesize="small" data-imageheight="AUTO" data-displaylist="Image,Date,Title,Summary,Credits,Tags" data-textcolour="#2C3E72" data-backgroundcolour="#E8EDEE" data-usecategoryintersect="false" data-iconshape="square" data-iconsize="1g" data-chklinkoptions="facebook,twitter,instagram,linkedin" data-showonhomepage="1" data-socialbarlabel="Find us on" data-objectname="Collection" data-scrollpages="false" data-applypermfilter="false" data-queue="true" data-stylesupport="{}" data-async="false" data-items="" data-nextnid="490A4D62-5F9A-4210-98C5A6D0A065C8F5" data-viewalllink="" data-viewalllabel=""><div class="mura-object-content"><style>
+        div[data-object="collection"] .mura-object-meta{
+            text-transform: none !important;
+        }
+    
+        
+    </style>
+    
+    
+    
+    
+        
+            
+        
+        
+        
+        
+            
+                <style>
+            #myshareBarx16DE6F1B .socialBar-barx16DE6F1B a, #mysocialBarx16DE6F1B .socialBar-barx16DE6F1B a {
+                float: left;
+                text-align: center;
+                padding: 8px 4px;
+            }
+    
+            #socialBarLabelDivx16DE6F1B .socialBarTitleLabel_socialx16DE6F1B {
+                color:#2C3E72 !important;
+                float:left;
+                margin-top:9px;
+                margin-right:2px;
+            }
+    
+            #myshareBarx16DE6F1B .socialBar-barx16DE6F1B, #mysocialBarx16DE6F1B .socialBar-barx16DE6F1B {
+                background-color: #E8EDEE;
+                overflow: auto;
+                z-index: 998;
+            }
+        </style>
+    
+        
+        
+    
+        
+            
+        
+    
+        
+            <div id="mysocialBarx16DE6F1B" class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 socialBar-barx16DE6F1B" id="socialBarx16DE6F1B">
+                    <div id="socialBarLabelDivx16DE6F1B">
+                        <span class="socialBarTitleLabel_socialx16DE6F1B">
+                            Find us on
+                        </span>
+                    </div>
+    
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://www.facebook.com/Swanseabay.nhs/" target="_blank" title="Facebook" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Facebook">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-facebook"></i>
+                                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://twitter.com/SwanseabayNHS?lang=en-gb" target="_blank" title="Twitter" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Twitter">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-twitter"></i>
+                                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://www.instagram.com/swanseabayuhb/" target="_self" title="Instagram" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Instagram">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-instagram"></i>
+                                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+    
+                            <a href="https://www.linkedin.com/company/swansea-bay-university-health-board/" target="_blank" title="Linkedin" role="button" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" aria-label="Linkedin">
+    
+                                <span class="fa-stack fa-1g">
+                                  <i class="fas fa-square fa-stack-2x iconColour-linkedin"></i>
+                                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                            </a>
+                        
+                    
+    
+                    
+    
+                    
+    
+                    
+                </div>-->
+            </div></div></div>
+                    <!--<div class="mura-object mura-twelve mura-sm mura-object-label-top mura-async-object" data-object="text" data-objectid="341E1D2C-3882-4CF0-8FD088B3FD9C29CF" data-instanceid="AA72C109-CC8D-4C1F-A72E5237CE2B1CFA" data-objectname="Text" data-objecticonclass="mi-font" data-queue="true" data-render="server" data-sourcetype="component" data-class="mura-twelve mura-sm mura-object-label-top" data-stylesupport="{}" data-source="CACCD95F-850E-45A9-9101EA25DC00181D" data-async="false" data-cssstyles=""><div class="mura-object-content"><div class="mura-object mura-async-object" data-object="component" data-objectid="CACCD95F-850E-45A9-9101EA25DC00181D" data-instanceid="3BD53C05-F3F9-4240-A07689ECA968D038" data-render="server" data-async="false" data-cssstyles="" data-objecticonclass="mi-clone" data-objectname=""><div class="mura-object-content"><p class="alert alert-success">Rydym yn croesawu gohebiaeth a galwadau ffôn yn y Gymraeg neu'r Saesneg. Atebir gohebiaeth Gymraeg yn y Gymraeg, ac ni fydd hyn yn arwain at oedi. Mae’r dudalen hon ar gael yn Gymraeg drwy bwyso’r botwm ar y dde ar frig y dudalen.</p>
+    
+                    <p class="alert alert-success">We welcome correspondence and telephone calls in Welsh or English. Welsh language correspondence will be replied to in Welsh, and this will not lead to a delay. This page is available in Welsh by clicking ‘Cymraeg’ at the top right of this page.</p></div></div></div></div></div><div class="mura-region-local"></div></div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    
+    </div> 
+
+    <footer>
+        <div class="container-fluid bg-dark text-light mt-0 pt-5">
+            <div class="container py-">
+                <div class="row">
+                    
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                              <p>
+                                    Opening Hours<br>
+                                    <br>
+                                    Monday: 8:00 – 20:30<br>
+                                    Tuesday: 8:00 – 20:30<br>
+                                    Wednesday: 8:00 – 20:30<br>
+                                    Thursday: 8:00 – 18:00<br>
+                                    Friday: 8:30 – 19:00<br>
+                                    Saturday: 09:00 – 12:00<br>
+                                    Sunday: 11:30 – 19:00  <br>
+                                    </p>
+                            </div>
+                            <div class="col-md-2 col-sm-6 footer-small-sepra hidden-xs">
+                              <p>Categories</p>
+                              <ul class="footer-nav">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'faq' %}">FAQs</a></li>
+                                <!--<li><a href="{% url 'home' %}">Job Opportunities</a></li>-->
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="{% url 'news' %}">News</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-6 footer-small-sepra contact-details">
+                              <div class="hidden-xs">
+                                <p>Talk to us</p>
+                              <p>
+                                          <label><i class="fa fa-envelope"></i></label>
+                                <a href="mailto:dowlaispharmacy@outlook.com">Dowlaispharmacy@outlook.com</a><br>
+                                                    <label><i class="fa fa-phone"></i></label>
+                                <a href="tel:01245 264252">01685 377824</a><br>
+                                                  </p>
+                              <p>Connect with us</p>
+                              <ul class="list-inline social-links">
+                                          <li><a target="_blank" href="https://www.facebook.com/DOWLAISpharmacy"><i class="fab fa-facebook-square"></i></a></li>
+                                                                                            <li><a target="_blank" href="https://www.google.com/maps/place/Georgetown+Pharmacy+Ltd/@51.7462973,-3.3871628,17.52z/data=!4m15!1m8!3m7!1s0x486e3ba311e251f5:0xa75c32e5f6d4a2b1!2sMerthyr+Tydfil+CF48+1AG!3b1!8m2!3d51.7438386!4d-3.3863518!16s%2Fg%2F1v1sknmf!3m5!1s0x486e3ba316abbefb:0xb2d07a0d37ab038!8m2!3d51.7463917!4d-3.3843458!16s%2Fg%2F1wj_5gjf"><i class="fab fa-google"></i></a></li>
+                                        </ul>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 footer-small-sepra">
+                              <!--<img class="bg-dark text-light" id="logo-icon" src="{% static 'media/logo4.png' %}" height="70px">-->
+                              <p>83 Victoria Street,<br>
+                                Dowlais,<br>
+                                Merthyr Tydfil,<br>
+                                CF48 3RN,<br>
+                                UK</p>
+                                    </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="footer-sepra"></div>
+                          <!-- COPYRIGHT -->
+                          <div class="copyright text-center">Copyright © 2023 <strong>Dowlais Pharmacy Ltd</strong>. All rights reserved. <a target="_blank" href="http://www.computeraidwales.co.uk/">Built by ComputerAidWales</a></div>
+                          <BR>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static "js/myscripts3.js" %}"></script>
+
+{% endblock %}
