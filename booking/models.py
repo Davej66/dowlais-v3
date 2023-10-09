@@ -34,10 +34,11 @@ PHARMACY_CHOICES = (
     )
 
 SERVICE_CHOICES = (
-    ("Doctor care", "Doctor care"),
-    ("Nursing care", "Nursing care"),
-    ("Medical social services", "Medical social services"),
-    ("Homemaker or basic assistance care", "Homemaker or basic assistance care"),
+    ("Urinary tract infection for women", "Urinary tract infection for women"),
+    ("Contraception", "Contraception"),
+    ("Skin conditions", "Skin conditions"),
+    ("Ear conditions", "Ear conditions"),
+    ("Sore throat test & treat", "Sore throat test & treat"),
     )
 
 TIME_CHOICES = (
