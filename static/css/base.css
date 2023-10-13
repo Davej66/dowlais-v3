@@ -11,14 +11,14 @@
 }
 
 .log-p {
-    padding-left: 450px;
-    padding-top: 100px;
+    margin-left: 25px;
+    margin-top: 250px;
     color: black;
 }
 
 .log-sign {
-    padding-left: 450px;
-    padding-top: 100px;
+    padding-left: 25px;
+    margin-top: 250px;
     color: black;
 }
 
@@ -28,7 +28,7 @@
     top: 20vh;
     right: 400px;
     animation: zoomin 1s linear 1;
-    animation-delay: 5s;
+    animation-delay: 1s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -628,7 +628,7 @@ input[name='q']::placeholder {
 
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
 
     #mum {
         display: none;

@@ -214,4 +214,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 default_auto_field = 'django.db.models.BigAutoField'
 
 
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
