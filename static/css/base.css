@@ -630,7 +630,15 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 1000px) {
 
-    #mum.mum2.mum3 {
+    #mum {
+        display: none;
+    }
+
+    #mum2 {
+        display: none;
+    }
+
+    #mum3 {
         display: none;
     }
 
