@@ -36,5 +36,15 @@ def password_reset(request):
 def logout(request):
     return render(request, 'logout.html')
 
+def uti(request):
+    return render(request, 'uti.html')
 
+def ear(request):
+    return render(request, 'ear.html')
+
+def pill(request):
+    return render(request, 'pill.html')
+
+def skin(request):
+    return render(request, 'skin.html')
 

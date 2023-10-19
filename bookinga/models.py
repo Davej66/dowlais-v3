@@ -8,7 +8,9 @@ SERVICE_CHOICESA = (
     ("Skin conditions", "Skin conditions"),
     ("Ear conditions", "Ear conditions"),
     ("Sore throat test & treat", "Sore throat test & treat"),
+    ("Flu Vaccination", "Flu Vaccination"),
     )
+
 TIME_CHOICESA = (
     ("9 AM", "9 AM"),
     ("9:30 AM", "9:30 AM"),

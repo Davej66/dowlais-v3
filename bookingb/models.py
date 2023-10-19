@@ -8,6 +8,7 @@ SERVICE_CHOICESB = (
     ("Skin conditions", "Skin conditions"),
     ("Ear conditions", "Ear conditions"),
     ("Sore throat test & treat", "Sore throat test & treat"),
+    ("Flu Vaccination", "Flu Vaccination"),
     )
     
 TIME_CHOICESB = (

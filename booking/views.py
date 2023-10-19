@@ -45,9 +45,7 @@ def booking(request):
 
     return render(request, 'booking.html', {
             'weekdays':weekdays,
-            'weekdaysx':weekdaysx,
             'validateWeekdays':validateWeekdays,
-            'validateWeekdaysx':validateWeekdaysx,
         })
 
 def bookingSubmit(request):
@@ -168,7 +166,7 @@ def userUpdateSubmit(request, id):
         if service != None:
           
                 if day <= maxDate and day >= minDate:
-                    if date == 'Monday' or date == 'Tuesday' or date == 'Wednesday':
+                    if y == 'Monday' or y == 'Tuesday' or y == 'Wednesday' or y == 'Thursday' or y == 'Friday':
                         if Appointment.objects.filter(day=day).count() < 11:
                             if Appointment.objects.filter(day=day, time=time).count() < 1 or userSelectedTime == time:
                                 AppointmentForm = Appointment.objects.filter(pk=id).update(
@@ -191,7 +189,6 @@ def userUpdateSubmit(request, id):
         else:
             messages.success(request, "Please Select A Service!")
         return redirect('userPanel')
-        
 
     return render(request, 'userUpdateSubmit.html', {
         'times':hour,

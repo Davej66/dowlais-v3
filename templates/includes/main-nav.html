@@ -9,7 +9,7 @@
         </li>
         <li class="g">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="home-link">
-                About_us
+                About us
             </a>
         </li>
         <li class="nav-item dropdown">
@@ -19,10 +19,12 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'services' %}?sort=price&direction=asc" class="dropdown-item">Flu Vaccination</a>
-                <a href="{% url 'services' %}?sort=rating&direction=desc" class="dropdown-item ">Morning After Pill</a>
-                <a href="{% url 'services' %}?sort=category&direction=asc" class="dropdown-item ">Ear, Throat advice</a>
-                <a href="{% url 'services' %}" class="dropdown-item">urinary tract infection Advice</a>
+                <a href="{% url 'flu' %}?sort=price&direction=asc" class="dropdown-item">Flu Vaccination</a>
+                <a href="{% url 'pill' %}?sort=rating&direction=desc" class="dropdown-item ">Emergency Contraception</a>
+                <a href="{% url 'ear' %}?sort=category&direction=asc" class="dropdown-item ">Ear, Throat advice</a>
+                <a href="{% url 'uti' %}" class="dropdown-item">urinary tract infection Advice</a>
+                <a href="{% url 'skin' %}" class="dropdown-item">Skin </a>
+                <a href="{% url 'services' %}" class="dropdown-item">All services</a> 
             </div>
         </li>
         <li class="g">
@@ -40,12 +42,27 @@
                 <!--<a href="{% url 'services' %}" class="dropdown-item">urinary tract infection Advice</a>--->
             </div>
         </li>
+        <li class="g">
+            <!--<a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'index' %}" id="home-link">
+                Appointments
+            </a>--->
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Stores
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'beacons' %}?" class="dropdown-item">Beacons Phamrmacy</a>
+                <a href="{% url 'dowlais' %}?" class="dropdown-item ">Dowlais Phamrmacy</a>
+                <a href="{% url 'georgetown' %}?" class="dropdown-item ">Georgetown Pharmacy</a>
+                <a href="{% url 'keir' %}?" class="dropdown-item ">Keir Hardie Pharmacy</a>
+                <a href="{% url 'lewis' %}?" class="dropdown-item ">Lewis Pharmacy</a>
+                <!--<a href="{% url 'services' %}" class="dropdown-item">urinary tract infection Advice</a>--->
+            </div>
+        </li>
 
-        <li class="nav-item d-block">
+        <!--<li class="nav-item d-block">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'news' %}" id="home-link">
                 News
             </a>
-        </li>
+        </li>-->
         
 
         <li class="nav-item dropdown">

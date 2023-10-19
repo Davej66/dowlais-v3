@@ -51,6 +51,10 @@ urlpatterns = [
     path('bookingb', include("bookingb.urls")),
     path('bookingc', include("bookingc.urls")),
     path('bookingd', include("bookingd.urls")),
+    path('uti', index.keir, name='uti'),
+    path('ear', index.keir, name='ear'),
+    path('pill', index.keir, name='pill'),
+    path('skin', index.keir, name='skin'),
     path('main/',  include("main.urls")),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
