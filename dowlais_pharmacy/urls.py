@@ -56,5 +56,6 @@ urlpatterns = [
     path('pill', index.pill, name='pill'),
     path('skin', index.skin, name='skin'),
     path('main/',  include("main.urls")),
+    path('staffPanelAll', index.staffPanelAll, name='staffPanelAll'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

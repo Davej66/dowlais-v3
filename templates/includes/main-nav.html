@@ -7,11 +7,7 @@
                 Home
             </a>
         </li>
-        <li class="g">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="home-link">
-                About us
-            </a>
-        </li>
+        
         <li class="nav-item dropdown">
             <!--<a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'services' %}" id="home-link">
                 Services
@@ -79,6 +75,11 @@
                 <a href="{% url 'faq' %}?category=clothing,sportswear,gifts,art,donation" class="dropdown-item">All </a>
             </div>-->
         </li>
+        <li class="g">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="home-link">
+                About us
+            </a>
+        </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="home-link">
@@ -103,8 +104,8 @@
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <!--<a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>]-->
-                        
-                        <a href="{% url 'staffPanel' %}" class="dropdown-item">Appointments</a>
+                        <a href="{% url 'staffPanelAll' %}" class="dropdown-item">Appointments Staff Level</a>
+                        <a href="{% url 'userPanel' %}" class="dropdown-item">Your appointments </a>
                     {% endif %}
                     <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                     <a href="{% url 'logout' %}" class="dropdown-item">Logout</a>

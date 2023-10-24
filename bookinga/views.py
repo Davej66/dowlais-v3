@@ -56,7 +56,7 @@ def bookingSubmit(request):
 
         if service != None:
             if day <= maxDate and day >= minDate:
-                if date == 'Monday' or date == 'Saturday' or date == 'Wednesday':
+                if date == 'Monday' or date == 'Tuesday' or date == 'Wednesday' or date == 'Thursday' or date == 'Friday':
                     if Appointmenta.objects.filter(day=day).count() < 11:
                         if Appointmenta.objects.filter(day=day, time=time).count() < 1:
                             AppointmentForm = Appointmenta.objects.get_or_create(
@@ -77,6 +77,7 @@ def bookingSubmit(request):
                     messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
         else:
             messages.success(request, "Please Select A Service!")
+
 
 
     return render(request, 'bookingSubmita.html', {

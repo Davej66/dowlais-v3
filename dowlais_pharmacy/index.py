@@ -48,3 +48,7 @@ def pill(request):
 def skin(request):
     return render(request, 'skin.html')
 
+def staffPanelAll(request):
+    return render(request, 'staffPanelAll.html')
+
+

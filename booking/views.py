@@ -285,3 +285,10 @@ def checkEditTime(times, day, id):
             x.append(k)
     return x
 
+def staffPanelAll(request):
+    user = request.user
+    appointments = Appointment.objects.order_by('day', 'time', 'dave')
+    return render(request, 'staffPanelAll.html', {
+        'user':user,
+        'appointments':appointments,
+    })

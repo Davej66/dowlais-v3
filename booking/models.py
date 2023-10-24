@@ -34,12 +34,13 @@ PHARMACY_CHOICES = (
     )
 
 SERVICE_CHOICES = (
-    ("Urinary tract infection for women", "Urinary tract infection for women"),
-    ("Contraception", "Contraception"),
+    ("Urinary tract infection", "Urinary tract infection"),
+    ("Emergency Contraception", "Emergency Contraception"),
     ("Skin conditions", "Skin conditions"),
-    ("Ear conditions", "Ear conditions"),
+    ("Ear Health", "Ear Health"),
     ("Sore throat test & treat", "Sore throat test & treat"),
     ("Flu Vaccination", "Flu Vaccination"),
+    ("Common Ailment Service", "Common Ailment Service"),
     )
 
 TIME_CHOICES = (

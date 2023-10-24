@@ -56,7 +56,7 @@ def bookingSubmit(request):
 
         if service != None:
             if day <= maxDate and day >= minDate:
-                if date == 'Monday' or date == 'Saturday' or date == 'Wednesday':
+                if date == 'Monday' or date == 'Tuesday' or date == 'Wednesday' or date == 'Thursday' or date == 'Friday':
                     if Appointmentd.objects.filter(day=day).count() < 11:
                         if Appointmentd.objects.filter(day=day, time=time).count() < 1:
                             AppointmentForm = Appointmentd.objects.get_or_create(

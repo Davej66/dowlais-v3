@@ -3,10 +3,10 @@ from datetime import datetime
 from django.contrib.auth.models import User
 
 SERVICE_CHOICESA = (
-    ("Urinary tract infection for women", "Urinary tract infection for women"),
-    ("Contraception", "Contraception"),
+    ("Urinary tract infection", "Urinary tract infection"),
+    ("Emergency Contraception", "Emergency Contraception"),
     ("Skin conditions", "Skin conditions"),
-    ("Ear conditions", "Ear conditions"),
+    ("Ear Health", "Ear Health"),
     ("Sore throat test & treat", "Sore throat test & treat"),
     ("Flu Vaccination", "Flu Vaccination"),
     )
