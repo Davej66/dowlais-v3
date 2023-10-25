@@ -36,7 +36,7 @@
                             <a class="nav-link active cHover" href="{% url 'bookinga' %}">Online Booking</a>
                         </li>                   
                         {% if user.is_authenticated %}
-                            {% if request.user.is_superuser %}
+                            {% if request.user.is_superuser or request.user.is_staff %}
                                 <!--Clinic Staff Link-->
                                 <li class="nav-item">
                                     <a class="nav-link active cHover" href="{% url 'staffPanela' %}">Staff Panel</a>

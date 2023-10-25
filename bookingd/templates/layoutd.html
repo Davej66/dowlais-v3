@@ -36,10 +36,12 @@
                             <a class="nav-link active cHover" href="{% url 'bookingd' %}">Online Booking</a>
                         </li>                   
                         {% if user.is_authenticated %}
-                        <!--Clinic Staff Link-->
-                        <li class="nav-item">
-                            <a class="nav-link active cHover" href="{% url 'staffPaneld' %}">Staff Panel</a>
-                        </li> 
+                          {% if request.user.is_superuser or request.user.is_staff %}
+                            <!--Clinic Staff Link-->
+                            <li class="nav-item">
+                                <a class="nav-link active cHover" href="{% url 'staffPanela' %}">Staff Panel</a>
+                            </li>
+                          {% endif %}
                         <li class="nav-item dropdown me-3 fs-5">
                             <a class="nav-link active dropdown-toggle cHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               User

@@ -102,7 +102,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
+                    {% if request.user.is_superuser or request.user.is_staff %}
                         <!--<a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>]-->
                         <a href="{% url 'staffPanelAll' %}" class="dropdown-item">Appointments Staff Level</a>
                         <a href="{% url 'userPanel' %}" class="dropdown-item">Your appointments </a>
